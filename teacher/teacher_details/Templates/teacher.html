@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<h3>Import Farmer</h3>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="file">
+    <button type="submit">Upload</button><br><br>
+      <a href="/acc/logout/" ><button type="button">Logout</button></a>
+
+  </form>
+
+</center>
+
+</body>
+</html>
